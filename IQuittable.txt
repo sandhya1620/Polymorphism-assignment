@@ -1,0 +1,6 @@
+// Define an interface named IQuittable
+public interface IQuittable
+{
+    // Declare a method named Quit that doesn't return any value
+    void Quit();
+}

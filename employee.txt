@@ -1,0 +1,22 @@
+// Define the Employee class
+public class Employee : IQuittable
+{
+    // Define properties for the Employee class
+    public int Id { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+
+    // Implement the Quit method from the IQuittable interface
+    public void Quit()
+    {
+        // Provide an implementation for the Quit method
+        // In this example, it simply prints a message to the console
+        Console.WriteLine($"{FirstName} {LastName} has quit the company.");
+    }
+
+    // Override the ToString method to provide a string representation of the Employee object
+    public override string ToString()
+    {
+        return $"{FirstName} {LastName}, ID: {Id}";
+    }
+}

@@ -1,0 +1,24 @@
+// Define the Program class with the Main method
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Create an instance of Employee
+        Employee employee = new Employee
+        {
+            Id = 1,
+            FirstName = "John",
+            LastName = "Doe"
+        };
+
+        // Create an IQuittable reference and assign it the Employee object
+        IQuittable quittableEmployee = employee;
+
+        // Call the Quit method on the IQuittable reference
+        // This will invoke the Quit method implemented in the Employee class
+        quittableEmployee.Quit();
+
+        // Optionally, display the employee details using the ToString method
+        Console.WriteLine(employee.ToString());
+    }
+}
